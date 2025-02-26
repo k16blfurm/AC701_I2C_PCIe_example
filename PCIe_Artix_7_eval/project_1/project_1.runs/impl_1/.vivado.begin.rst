@@ -1,90 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="16052" HostCore="8" HostMemory="034193199104">
+    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="15644" HostCore="8" HostMemory="034193199104">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="14100" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="21816" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="16348" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="19976" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="20908" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="21624" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="4076" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="18760" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="23344" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="24732" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="7700" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="23380" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="5208" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="1672" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="10864" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="15776" HostCore="8" HostMemory="034193199104">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="23076" HostCore="8" HostMemory="034193199104">
+    <Process Command="vivado.bat" Owner="blaine" Host="DESKTOP-KBUD60Q" Pid="24916" HostCore="8" HostMemory="034193199104">
     </Process>
 </ProcessHandle>

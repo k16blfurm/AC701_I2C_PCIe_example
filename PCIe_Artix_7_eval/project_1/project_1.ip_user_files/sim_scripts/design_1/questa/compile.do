@@ -13,10 +13,12 @@ vlib questa_lib/msim/axi_lite_ipif_v3_0_4
 vlib questa_lib/msim/interrupt_control_v3_1_5
 vlib questa_lib/msim/axi_iic_v2_1_8
 vlib questa_lib/msim/generic_baseblocks_v2_1_2
-vlib questa_lib/msim/fifo_generator_v13_2_10
-vlib questa_lib/msim/axi_data_fifo_v2_1_31
 vlib questa_lib/msim/axi_infrastructure_v1_1_0
 vlib questa_lib/msim/axi_register_slice_v2_1_32
+vlib questa_lib/msim/fifo_generator_v13_2_10
+vlib questa_lib/msim/axi_data_fifo_v2_1_31
+vlib questa_lib/msim/axi_crossbar_v2_1_33
+vlib questa_lib/msim/axi_bram_ctrl_v4_1_10
 vlib questa_lib/msim/axi_protocol_converter_v2_1_32
 vlib questa_lib/msim/axi_clock_converter_v2_1_31
 vlib questa_lib/msim/axi_dwidth_converter_v2_1_32
@@ -33,10 +35,12 @@ vmap axi_lite_ipif_v3_0_4 questa_lib/msim/axi_lite_ipif_v3_0_4
 vmap interrupt_control_v3_1_5 questa_lib/msim/interrupt_control_v3_1_5
 vmap axi_iic_v2_1_8 questa_lib/msim/axi_iic_v2_1_8
 vmap generic_baseblocks_v2_1_2 questa_lib/msim/generic_baseblocks_v2_1_2
-vmap fifo_generator_v13_2_10 questa_lib/msim/fifo_generator_v13_2_10
-vmap axi_data_fifo_v2_1_31 questa_lib/msim/axi_data_fifo_v2_1_31
 vmap axi_infrastructure_v1_1_0 questa_lib/msim/axi_infrastructure_v1_1_0
 vmap axi_register_slice_v2_1_32 questa_lib/msim/axi_register_slice_v2_1_32
+vmap fifo_generator_v13_2_10 questa_lib/msim/fifo_generator_v13_2_10
+vmap axi_data_fifo_v2_1_31 questa_lib/msim/axi_data_fifo_v2_1_31
+vmap axi_crossbar_v2_1_33 questa_lib/msim/axi_crossbar_v2_1_33
+vmap axi_bram_ctrl_v4_1_10 questa_lib/msim/axi_bram_ctrl_v4_1_10
 vmap axi_protocol_converter_v2_1_32 questa_lib/msim/axi_protocol_converter_v2_1_32
 vmap axi_clock_converter_v2_1_31 questa_lib/msim/axi_clock_converter_v2_1_31
 vmap axi_dwidth_converter_v2_1_32 questa_lib/msim/axi_dwidth_converter_v2_1_32
@@ -166,12 +170,18 @@ vcom -work axi_iic_v2_1_8  -93  \
 
 vcom -work xil_defaultlib  -93  \
 "../../../bd/design_1/ip/design_1_axi_iic_0_0/sim/design_1_axi_iic_0_0.vhd" \
-"../../../bd/design_1/sim/design_1.vhd" \
 "../../../bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd" \
 "../../../bd/design_1/ip/design_1_util_ds_buf_0_0/sim/design_1_util_ds_buf_0_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
 
 vlog -work generic_baseblocks_v2_1_2  -incr -mfcu  "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/e51b/hdl/verilog" "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../project_1.gen/sources_1/bd/design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
+
+vlog -work axi_infrastructure_v1_1_0  -incr -mfcu  "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/e51b/hdl/verilog" "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
+
+vlog -work axi_register_slice_v2_1_32  -incr -mfcu  "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/e51b/hdl/verilog" "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/676c/hdl/axi_register_slice_v2_1_vl_rfs.v" \
 
 vlog -work fifo_generator_v13_2_10  -incr -mfcu  "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/e51b/hdl/verilog" "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../project_1.gen/sources_1/bd/design_1/ipshared/1443/simulation/fifo_generator_vlog_beh.v" \
@@ -185,11 +195,17 @@ vlog -work fifo_generator_v13_2_10  -incr -mfcu  "+incdir+../../../../project_1.
 vlog -work axi_data_fifo_v2_1_31  -incr -mfcu  "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/e51b/hdl/verilog" "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../project_1.gen/sources_1/bd/design_1/ipshared/2ccb/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
 
-vlog -work axi_infrastructure_v1_1_0  -incr -mfcu  "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/e51b/hdl/verilog" "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
+vlog -work axi_crossbar_v2_1_33  -incr -mfcu  "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/e51b/hdl/verilog" "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v" \
 
-vlog -work axi_register_slice_v2_1_32  -incr -mfcu  "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/e51b/hdl/verilog" "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../../project_1.gen/sources_1/bd/design_1/ipshared/676c/hdl/axi_register_slice_v2_1_vl_rfs.v" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/e51b/hdl/verilog" "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+
+vcom -work axi_bram_ctrl_v4_1_10  -93  \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/14fa/hdl/axi_bram_ctrl_v4_1_rfs.vhd" \
+
+vcom -work xil_defaultlib  -93  \
+"../../../bd/design_1/ip/design_1_axi_bram_ctrl_0_0/sim/design_1_axi_bram_ctrl_0_0.vhd" \
 
 vlog -work axi_protocol_converter_v2_1_32  -incr -mfcu  "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/e51b/hdl/verilog" "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../project_1.gen/sources_1/bd/design_1/ipshared/d59d/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
@@ -203,6 +219,8 @@ vlog -work axi_dwidth_converter_v2_1_32  -incr -mfcu  "+incdir+../../../../proje
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/e51b/hdl/verilog" "+incdir+../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_auto_ds_0/sim/design_1_auto_ds_0.v" \
 "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../bd/design_1/ip/design_1_auto_ds_1/sim/design_1_auto_ds_1.v" \
+"../../../bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

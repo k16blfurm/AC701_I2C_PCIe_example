@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/blaine/Documents/PCIe_Artix_7_eval/project_1/project_1.runs/impl_1'
+HD_PWD='C:/Users/blaine/Documents/GitHub/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

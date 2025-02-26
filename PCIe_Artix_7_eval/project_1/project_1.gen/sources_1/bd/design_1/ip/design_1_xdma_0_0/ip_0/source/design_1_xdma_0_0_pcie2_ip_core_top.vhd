@@ -69,7 +69,7 @@ use xpm.vcomponents.all;
 entity design_1_xdma_0_0_pcie2_ip_core_top is
   generic (
     CFG_VEND_ID                                    : std_logic_vector := X"10EE";
-    CFG_DEV_ID                                     : std_logic_vector := X"7024";
+    CFG_DEV_ID                                     : std_logic_vector := X"1337";
     CFG_REV_ID                                     : std_logic_vector := X"00";
     CFG_SUBSYS_VEND_ID                             : std_logic_vector := X"10EE";
     CFG_SUBSYS_ID                                  : std_logic_vector := X"0007";

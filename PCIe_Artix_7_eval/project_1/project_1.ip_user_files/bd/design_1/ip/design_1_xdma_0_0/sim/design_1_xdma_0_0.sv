@@ -112,7 +112,7 @@ module design_1_xdma_0_0 (
   cfg_mgmt_type1_cfg_reg_access
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_in1_0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_util_ds_buf_0_0_IBUF_OUT, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLK CLK" *)
 input wire sys_clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.sys_rst_n, BOARD.ASSOCIATED_PARAM SYS_RST_N_BOARD_INTERFACE, TYPE PCIE_PERST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
@@ -253,7 +253,7 @@ input wire cfg_mgmt_type1_cfg_reg_access;
     .MCAP_ENABLEMENT("NONE"),
     .EXT_STARTUP_PRIMITIVE("false"),
     .PF0_VENDOR_ID(16'H10EE),
-    .PF0_DEVICE_ID(16'H7024),
+    .PF0_DEVICE_ID(16'H1337),
     .PF0_REVISION_ID(8'H00),
     .PF0_SUBSYSTEM_VENDOR_ID(16'H10EE),
     .PF0_SUBSYSTEM_ID(16'H0007),
@@ -274,7 +274,7 @@ input wire cfg_mgmt_type1_cfg_reg_access;
     .AXILITE_MASTER_CONTROL(3'H0),
     .XDMA_APERTURE_SIZE(8'H09),
     .XDMA_CONTROL(3'H4),
-    .AXIST_BYPASS_APERTURE_SIZE(8'H0D),
+    .AXIST_BYPASS_APERTURE_SIZE(8'H17),
     .AXIST_BYPASS_CONTROL(3'H0),
     .PF0_INTERRUPT_PIN(3'H1),
     .PF0_MSI_CAP_MULTIMSGCAP(0),
@@ -560,7 +560,7 @@ input wire cfg_mgmt_type1_cfg_reg_access;
     .pci_exp_rxn(pci_exp_rxn),
     .cfg_subsys_vend_id(16'H10EE),
     .cfg_vend_id(16'H10EE),
-    .cfg_dev_id_pf0(16'H7024),
+    .cfg_dev_id_pf0(16'H1337),
     .cfg_dev_id_pf1(16'H1041),
     .cfg_dev_id_pf2(16'H1040),
     .cfg_dev_id_pf3(16'H1039),

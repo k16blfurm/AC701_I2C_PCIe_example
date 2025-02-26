@@ -12,4 +12,7 @@ Lessons Learned:
 - pcie lanes also do not need to be declared
 - Need to enable pcie bus region in RHEL/Alma Linux
 	- Initial commit has Region 0? Not sure.
-- MCS is N25Q256A13ESF40G
+- MCS is mt25ql256-spi-x1_x2_x4
+
+2/25/25 Ver 1:
+- Added Bram and Memory Generator

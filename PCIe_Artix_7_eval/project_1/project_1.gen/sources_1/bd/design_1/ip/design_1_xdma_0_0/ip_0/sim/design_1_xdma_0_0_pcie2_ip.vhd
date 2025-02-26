@@ -917,7 +917,7 @@ BEGIN
       xrom_bar => "00000000",
       cost_table => 1,
       ven_id => "10EE",
-      dev_id => "7024",
+      dev_id => "1337",
       rev_id => "00",
       subsys_ven_id => "10EE",
       subsys_id => "0007",
