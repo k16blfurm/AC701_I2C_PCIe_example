@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xD5FF4939
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                                     Checksum
+0x00000000    0x002ABEB7    Feb 25 22:20:10 2025    C:/Users/blaine/Documents/PCIe_Artix_7_eval/project_1/project_1.runs/impl_1/top_file.bit    0x02934281
+File Checksum Total                                                                                                                             0x02934281

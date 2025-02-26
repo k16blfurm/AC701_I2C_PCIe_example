@@ -1,0 +1,33 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.679216",
+   "Default View_TopLeft":"-222,13",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port pcie_7x_mgt_rtl -pg 1 -lvl 5 -x 1350 -y 290 -defaultsOSRD
+preplace port IIC_0 -pg 1 -lvl 5 -x 1350 -y 410 -defaultsOSRD
+preplace port CLK_IN1_D_0 -pg 1 -lvl 0 -x -80 -y 280 -defaultsOSRD
+preplace port port-id_sys_rst_n -pg 1 -lvl 0 -x -80 -y 350 -defaultsOSRD
+preplace port port-id_CLK_125_AXI -pg 1 -lvl 5 -x 1350 -y 310 -defaultsOSRD
+preplace inst xdma_0 -pg 1 -lvl 2 -x 610 -y 340 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 3 -x 940 -y 410 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 4 -x 1210 -y 430 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 1 -x 320 -y 260 -defaultsOSRD
+preplace netloc sys_rst_n_1 1 0 2 N 350 N
+preplace netloc xdma_0_axi_aclk 1 2 3 790 280 1090 310 N
+preplace netloc xdma_0_axi_aresetn 1 2 2 770 530 1090
+preplace netloc util_ds_buf_0_IBUF_OUT 1 1 1 450 260n
+preplace netloc axi_iic_0_IIC 1 4 1 NJ 410
+preplace netloc axi_interconnect_0_M00_AXI 1 3 1 N 410
+preplace netloc xdma_0_M_AXI 1 2 1 780 270n
+preplace netloc xdma_0_pcie_mgt 1 2 3 NJ 290 NJ 290 NJ
+preplace netloc CLK_IN1_D_0_1 1 0 1 -60 260n
+levelinfo -pg 1 -80 320 610 940 1210 1350
+pagesize -pg 1 -db -bbox -sgen -230 -100 1500 550
+"
+}
+{
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"3"
+}

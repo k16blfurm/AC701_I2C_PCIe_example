@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.1 (64-bit)
+# SW Build 5094488 on Fri Jun 14 08:59:21 MDT 2024
+# IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+# SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+# Start of session at: Tue Feb 25 21:40:34 2025
+# Process ID: 19208
+# Current directory: C:/Users/blaine/Documents/PCIe_Artix_7_eval/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log top_file.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_file.tcl -notrace
+# Log file: C:/Users/blaine/Documents/PCIe_Artix_7_eval/project_1/project_1.runs/impl_1/top_file.vdi
+# Journal file: C:/Users/blaine/Documents/PCIe_Artix_7_eval/project_1/project_1.runs/impl_1\vivado.jou
+# Running On        :DESKTOP-KBUD60Q
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency     :2400 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :34193 MB
+# Swap memory       :13958 MB
+# Total Virtual     :48151 MB
+# Available Virtual :25218 MB
+#-----------------------------------------------------------
+source top_file.tcl -notrace
