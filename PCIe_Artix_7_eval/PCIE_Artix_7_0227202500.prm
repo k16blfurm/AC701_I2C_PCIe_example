@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xD3499455
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                                                                Checksum
+0x00000000    0x002DBBEB    Feb 27 00:08:51 2025    /home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.runs/impl_1/top_file.bit    0x02D7C469
+File Checksum Total                                                                                                                                                        0x02D7C469

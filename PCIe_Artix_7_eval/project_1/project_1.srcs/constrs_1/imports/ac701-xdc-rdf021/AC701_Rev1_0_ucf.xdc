@@ -5,6 +5,9 @@ set_property IOSTANDARD LVCMOS33 [get_ports sys_rst_n]
 set_property PULLUP true [get_ports sys_rst_n]
 set_property PACKAGE_PIN M20 [get_ports sys_rst_n]
 
+#set_property PACKAGE_PIN P16 [get_ports FPGA_EMCCLK]
+#set_property IOSTANDARD LVCMOS33 [get_ports FPGA_EMCCLK]
+
 #LEDS on the board
 set_property PACKAGE_PIN M26 [get_ports GPIO_LED_0]
 set_property IOSTANDARD LVCMOS33 [get_ports GPIO_LED_0]
@@ -27,6 +30,27 @@ set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
 set_property BITSTREAM.CONFIG.SPI_FALL_EDGE YES [current_design]
 set_property CFGBVS VCCO [current_design]
 set_property CONFIG_VOLTAGE 3.3 [current_design]
+
+
+
+
+
+#set_property LOC IBUFDS_GTE2_X0Y2 [get_cells refclk_ibuf]
+
+#200MHZ clock to chipscope/etc
+#set_property PACKAGE_PIN R3 [get_ports SYSCLK_P]
+#set_property IOSTANDARD LVDS_25 [get_ports SYSCLK_P]
+#set_property PACKAGE_PIN P3 [get_ports SYSCLK_N]
+#set_property IOSTANDARD LVDS_25 [get_ports SYSCLK_N]
+
+
+
+#####Pcie Clocks
+set_property PACKAGE_PIN F11 [get_ports refclk_p]
+set_property IOSTANDARD LVDS_25 [get_ports refclk_p]
+set_property PACKAGE_PIN E11 [get_ports refclk_n]
+set_property IOSTANDARD LVDS_25 [get_ports refclk_n]
+
 #create_clock -name sys_clk -period 10 [get_ports sys_clk_p]
 
 #set_property LOC IBUFDS_GTE2_X0Y2 [get_cells refclk_ibuf]
@@ -51,11 +75,7 @@ set_property CONFIG_VOLTAGE 3.3 [current_design]
 #set_false_path -from [get_ports sys_rst_n]
 
 
-###Pcie Clocks
-set_property PACKAGE_PIN F11 [get_ports sys_clk_p]
-set_property IOSTANDARD LVDS_25 [get_ports sys_clk_p]
-set_property PACKAGE_PIN E11 [get_ports sys_clk_n]
-set_property IOSTANDARD LVDS_25 [get_ports sys_clk_n]
+
 
 #set_property LOC IBUFDS_GTE2_X0Y2 [get_cells util_ds_buf_0_IBUF_OUT]
 
@@ -743,10 +763,7 @@ set_property IOSTANDARD LVDS_25 [get_ports sys_clk_n]
 #set_property IOSTANDARD DIFF_SSTL15 [get_ports DDR3_CLK1_P]
 #set_property PACKAGE_PIN N2 [get_ports DDR3_CLK1_N]
 #set_property IOSTANDARD DIFF_SSTL15 [get_ports DDR3_CLK1_N]
-#set_property PACKAGE_PIN R3 [get_ports SYSCLK_P]
-#set_property IOSTANDARD LVDS_25 [get_ports SYSCLK_P]
-#set_property PACKAGE_PIN P3 [get_ports SYSCLK_N]
-#set_property IOSTANDARD LVDS_25 [get_ports SYSCLK_N]
+
 #set_property PACKAGE_PIN P4 [get_ports DDR3_CKE0]
 #set_property IOSTANDARD SSTL15 [get_ports DDR3_CKE0]
 #set_property PACKAGE_PIN N4 [get_ports DDR3_CKE1]

@@ -64,7 +64,7 @@
 #
 # Link Speed   - 2
 # Link Width   - X4
-# AXIST Width  - 128-bit
+# AXIST Width  - 64-bit
 # AXIST Frequ  - 3
 #
 ###############################################################################

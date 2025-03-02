@@ -63,7 +63,7 @@ design_1_xbar_0_sc::design_1_xbar_0_sc(const sc_core::sc_module_name& nm) : sc_c
     xsc::common_cpp::properties model_param_props;
     model_param_props.addLong("C_NUM_SLAVE_SLOTS", "2");
     model_param_props.addLong("C_NUM_MASTER_SLOTS", "2");
-    model_param_props.addLong("C_AXI_ID_WIDTH", "5");
+    model_param_props.addLong("C_AXI_ID_WIDTH", "1");
     model_param_props.addLong("C_AXI_ADDR_WIDTH", "64");
     model_param_props.addLong("C_AXI_DATA_WIDTH", "128");
     model_param_props.addLong("C_AXI_PROTOCOL", "0");
@@ -79,8 +79,8 @@ design_1_xbar_0_sc::design_1_xbar_0_sc(const sc_core::sc_module_name& nm) : sc_c
     model_param_props.addString("C_FAMILY", "artix7");
     model_param_props.addBitString("C_M_AXI_BASE_ADDR", "00000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000001000000100000000000000000000000", 128);
     model_param_props.addBitString("C_M_AXI_ADDR_WIDTH", "0000000000000000000000000000110100000000000000000000000000010000", 64);
-    model_param_props.addBitString("C_S_AXI_BASE_ID", "0000000000000000000000000001000000000000000000000000000000000000", 64);
-    model_param_props.addBitString("C_S_AXI_THREAD_ID_WIDTH", "0000000000000000000000000000000000000000000000000000000000000100", 64);
+    model_param_props.addBitString("C_S_AXI_BASE_ID", "0000000000000000000000000000000100000000000000000000000000000000", 64);
+    model_param_props.addBitString("C_S_AXI_THREAD_ID_WIDTH", "0000000000000000000000000000000000000000000000000000000000000000", 64);
     model_param_props.addBitString("C_M_AXI_WRITE_CONNECTIVITY", "0000000000000000000000000000001100000000000000000000000000000011", 64);
     model_param_props.addBitString("C_M_AXI_READ_CONNECTIVITY", "0000000000000000000000000000001100000000000000000000000000000011", 64);
     model_param_props.addBitString("C_S_AXI_SINGLE_THREAD", "0000000000000000000000000000000000000000000000000000000000000000", 64);

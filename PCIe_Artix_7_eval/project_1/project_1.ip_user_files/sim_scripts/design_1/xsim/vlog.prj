@@ -1,4 +1,4 @@
-verilog xil_defaultlib --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/e51b/hdl/verilog" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" \
+verilog xil_defaultlib --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/c9f6/hdl/verilog" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_pipe_clock.v" \
 "../../../bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_pipe_drp.v" \
 "../../../bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_pipe_eq.v" \
@@ -18,12 +18,12 @@ verilog xil_defaultlib --include "../../../../project_1.gen/sources_1/bd/design_
 "../../../bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_gt_common.v" \
 "../../../bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_gtp_cpllpd_ovrd.v" \
 "../../../bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_gtx_cpllpd_ovrd.v" \
-"../../../bd/design_1/ip/design_1_xdma_0_0/ip_1/sim/xdma_v4_1_30_blk_mem_64_reg_be.v" \
-"../../../bd/design_1/ip/design_1_xdma_0_0/ip_2/sim/xdma_v4_1_30_blk_mem_64_noreg_be.v" \
+"../../../bd/design_1/ip/design_1_xdma_0_0/ip_1/sim/xdma_v4_1_29_blk_mem_64_reg_be.v" \
+"../../../bd/design_1/ip/design_1_xdma_0_0/ip_2/sim/xdma_v4_1_29_blk_mem_64_noreg_be.v" \
 "../../../bd/design_1/ip/design_1_xdma_0_0/ip_3/sim/pcie2_fifo_generator_dma_cpl.v" \
 "../../../bd/design_1/ip/design_1_xdma_0_0/ip_4/sim/pcie2_fifo_generator_tgt_brdg.v" \
 
-sv xil_defaultlib --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/e51b/hdl/verilog" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" \
+sv xil_defaultlib --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/c9f6/hdl/verilog" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../bd/design_1/ip/design_1_xdma_0_0/xdma_v4_1/hdl/verilog/design_1_xdma_0_0_dma_cpl.sv" \
 "../../../bd/design_1/ip/design_1_xdma_0_0/xdma_v4_1/hdl/verilog/design_1_xdma_0_0_dma_req.sv" \
 "../../../bd/design_1/ip/design_1_xdma_0_0/xdma_v4_1/hdl/verilog/design_1_xdma_0_0_rx_destraddler.sv" \
@@ -40,12 +40,13 @@ sv xil_defaultlib --include "../../../../project_1.gen/sources_1/bd/design_1/ips
 "../../../bd/design_1/ip/design_1_xdma_0_0/xdma_v4_1/hdl/verilog/design_1_xdma_0_0_core_top.sv" \
 "../../../bd/design_1/ip/design_1_xdma_0_0/sim/design_1_xdma_0_0.sv" \
 
-verilog xil_defaultlib --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/e51b/hdl/verilog" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" \
+verilog xil_defaultlib --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/c9f6/hdl/verilog" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" \
+"../../../bd/design_1/ip/design_1_auto_us_0/sim/design_1_auto_us_0.v" \
 "../../../bd/design_1/ip/design_1_auto_ds_0/sim/design_1_auto_ds_0.v" \
 "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
 "../../../bd/design_1/ip/design_1_auto_ds_1/sim/design_1_auto_ds_1.v" \
-"../../../bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" \
 
 verilog xil_defaultlib "glbl.v"
 

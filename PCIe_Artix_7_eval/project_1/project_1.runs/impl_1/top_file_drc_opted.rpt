@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2024.1.1 (win64) Build 5094488 Fri Jun 14 08:59:21 MDT 2024
-| Date         : Tue Feb 25 22:48:32 2025
-| Host         : DESKTOP-KBUD60Q running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Thu Feb 27 00:05:59 2025
+| Host         : localhost.localdomain running 64-bit unknown
 | Command      : report_drc -file top_file_drc_opted.rpt -pb top_file_drc_opted.pb -rpx top_file_drc_opted.rpx
 | Design       : top_file
 | Device       : xc7a200tfbg676-2
@@ -20,7 +20,7 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: design_1
+          Floorplan: checkpoint_top_file
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>

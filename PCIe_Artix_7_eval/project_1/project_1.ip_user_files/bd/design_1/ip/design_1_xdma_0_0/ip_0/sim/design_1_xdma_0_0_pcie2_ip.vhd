@@ -67,14 +67,14 @@ ENTITY design_1_xdma_0_0_pcie2_ip IS
     tx_cfg_req : OUT STD_LOGIC;
     tx_err_drop : OUT STD_LOGIC;
     s_axis_tx_tready : OUT STD_LOGIC;
-    s_axis_tx_tdata : IN STD_LOGIC_VECTOR(127 DOWNTO 0);
-    s_axis_tx_tkeep : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    s_axis_tx_tdata : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
+    s_axis_tx_tkeep : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     s_axis_tx_tlast : IN STD_LOGIC;
     s_axis_tx_tvalid : IN STD_LOGIC;
     s_axis_tx_tuser : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     tx_cfg_gnt : IN STD_LOGIC;
-    m_axis_rx_tdata : OUT STD_LOGIC_VECTOR(127 DOWNTO 0);
-    m_axis_rx_tkeep : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+    m_axis_rx_tdata : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
+    m_axis_rx_tkeep : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     m_axis_rx_tlast : OUT STD_LOGIC;
     m_axis_rx_tvalid : OUT STD_LOGIC;
     m_axis_rx_tready : IN STD_LOGIC;
@@ -476,14 +476,14 @@ ARCHITECTURE design_1_xdma_0_0_pcie2_ip_arch OF design_1_xdma_0_0_pcie2_ip IS
       tx_cfg_req : OUT STD_LOGIC;
       tx_err_drop : OUT STD_LOGIC;
       s_axis_tx_tready : OUT STD_LOGIC;
-      s_axis_tx_tdata : IN STD_LOGIC_VECTOR(127 DOWNTO 0);
-      s_axis_tx_tkeep : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+      s_axis_tx_tdata : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
+      s_axis_tx_tkeep : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       s_axis_tx_tlast : IN STD_LOGIC;
       s_axis_tx_tvalid : IN STD_LOGIC;
       s_axis_tx_tuser : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       tx_cfg_gnt : IN STD_LOGIC;
-      m_axis_rx_tdata : OUT STD_LOGIC_VECTOR(127 DOWNTO 0);
-      m_axis_rx_tkeep : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+      m_axis_rx_tdata : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
+      m_axis_rx_tkeep : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
       m_axis_rx_tlast : OUT STD_LOGIC;
       m_axis_rx_tvalid : OUT STD_LOGIC;
       m_axis_rx_tready : IN STD_LOGIC;
@@ -842,7 +842,7 @@ ARCHITECTURE design_1_xdma_0_0_pcie2_ip_arch OF design_1_xdma_0_0_pcie2_ip IS
   ATTRIBUTE X_INTERFACE_INFO OF fc_pd: SIGNAL IS "xilinx.com:interface:pcie_cfg_fc:1.0 pcie_cfg_fc PD";
   ATTRIBUTE X_INTERFACE_INFO OF fc_ph: SIGNAL IS "xilinx.com:interface:pcie_cfg_fc:1.0 pcie_cfg_fc PH";
   ATTRIBUTE X_INTERFACE_INFO OF fc_sel: SIGNAL IS "xilinx.com:interface:pcie_cfg_fc:1.0 pcie_cfg_fc SEL";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF m_axis_rx_tdata: SIGNAL IS "XIL_INTERFACENAME m_axis_rx, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 22, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, LAYERED_METADATA undef, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF m_axis_rx_tdata: SIGNAL IS "XIL_INTERFACENAME m_axis_rx, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 22, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, LAYERED_METADATA undef, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_rx_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 m_axis_rx TDATA";
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_rx_tkeep: SIGNAL IS "xilinx.com:interface:axis:1.0 m_axis_rx TKEEP";
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_rx_tlast: SIGNAL IS "xilinx.com:interface:axis:1.0 m_axis_rx TLAST";
@@ -878,7 +878,7 @@ ARCHITECTURE design_1_xdma_0_0_pcie2_ip_arch OF design_1_xdma_0_0_pcie2_ip IS
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_tx_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 s_axis_tx TDATA";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_tx_tkeep: SIGNAL IS "xilinx.com:interface:axis:1.0 s_axis_tx TKEEP";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_tx_tlast: SIGNAL IS "xilinx.com:interface:axis:1.0 s_axis_tx TLAST";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axis_tx_tready: SIGNAL IS "XIL_INTERFACENAME s_axis_tx, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 4, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, LAYERED_METADATA undef, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axis_tx_tready: SIGNAL IS "XIL_INTERFACENAME s_axis_tx, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 4, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, LAYERED_METADATA undef, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_tx_tready: SIGNAL IS "xilinx.com:interface:axis:1.0 s_axis_tx TREADY";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_tx_tuser: SIGNAL IS "xilinx.com:interface:axis:1.0 s_axis_tx TUSER";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_tx_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 s_axis_tx TVALID";
@@ -906,7 +906,7 @@ BEGIN
       max_lnk_wdt => "000100",
       max_lnk_spd => "2",
       c_gen1 => true,
-      pci_exp_int_freq => 2,
+      pci_exp_int_freq => 3,
       c_pcie_fast_config => 0,
       bar_0 => "FFFF0000",
       bar_1 => "00000000",
@@ -1091,7 +1091,7 @@ BEGIN
       c_silicon_rev => "2",
       c_aer_cap_optional_err_support => "000000",
       LINK_CAP_MAX_LINK_WIDTH => 4,
-      C_DATA_WIDTH => 128,
+      C_DATA_WIDTH => 64,
       PIPE_SIM => "FALSE",
       PCIE_EXT_CLK => "FALSE",
       PCIE_EXT_GT_COMMON => "FALSE",
@@ -1107,7 +1107,7 @@ BEGIN
       CFG_FC_IF => "TRUE",
       EXT_PIPE_INTERFACE => "FALSE",
       EXT_STARTUP_PRIMITIVE => "FALSE",
-      KEEP_WIDTH => 16,
+      KEEP_WIDTH => 8,
       PCIE_ASYNC_EN => "FALSE",
       ENABLE_JTAG_DBG => "FALSE",
       REDUCE_OOB_FREQ => "FALSE"

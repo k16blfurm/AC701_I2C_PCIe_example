@@ -1,9 +1,9 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2024.1.1 (win64) Build 5094488 Fri Jun 14 08:59:21 MDT 2024
---Date        : Tue Feb 25 22:39:48 2025
---Host        : DESKTOP-KBUD60Q running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+--Date        : Sun Mar  2 13:52:34 2025
+--Host        : localhost.localdomain running 64-bit unknown
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
 --Purpose     : IP block netlist
@@ -15,8 +15,8 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1_wrapper is
   port (
     CLK_125_AXI : out STD_LOGIC;
-    CLK_IN1_D_0_clk_n : in STD_LOGIC_VECTOR ( 0 to 0 );
-    CLK_IN1_D_0_clk_p : in STD_LOGIC_VECTOR ( 0 to 0 );
+    CLK_IN_D_0_clk_n : in STD_LOGIC;
+    CLK_IN_D_0_clk_p : in STD_LOGIC;
     IIC_0_scl_io : inout STD_LOGIC;
     IIC_0_sda_io : inout STD_LOGIC;
     pcie_7x_mgt_rtl_rxn : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -40,10 +40,10 @@ architecture STRUCTURE of design_1_wrapper is
     IIC_0_sda_i : in STD_LOGIC;
     IIC_0_sda_o : out STD_LOGIC;
     IIC_0_sda_t : out STD_LOGIC;
-    CLK_IN1_D_0_clk_n : in STD_LOGIC_VECTOR ( 0 to 0 );
-    CLK_IN1_D_0_clk_p : in STD_LOGIC_VECTOR ( 0 to 0 );
     sys_rst_n : in STD_LOGIC;
-    CLK_125_AXI : out STD_LOGIC
+    CLK_125_AXI : out STD_LOGIC;
+    CLK_IN_D_0_clk_p : in STD_LOGIC;
+    CLK_IN_D_0_clk_n : in STD_LOGIC
   );
   end component design_1;
   component IOBUF is
@@ -78,8 +78,8 @@ IIC_0_sda_iobuf: component IOBUF
 design_1_i: component design_1
      port map (
       CLK_125_AXI => CLK_125_AXI,
-      CLK_IN1_D_0_clk_n(0) => CLK_IN1_D_0_clk_n(0),
-      CLK_IN1_D_0_clk_p(0) => CLK_IN1_D_0_clk_p(0),
+      CLK_IN_D_0_clk_n => CLK_IN_D_0_clk_n,
+      CLK_IN_D_0_clk_p => CLK_IN_D_0_clk_p,
       IIC_0_scl_i => IIC_0_scl_i,
       IIC_0_scl_o => IIC_0_scl_o,
       IIC_0_scl_t => IIC_0_scl_t,

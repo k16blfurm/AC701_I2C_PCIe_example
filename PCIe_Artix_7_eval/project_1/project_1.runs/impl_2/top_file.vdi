@@ -1,0 +1,342 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Mar  1 12:45:43 2025
+# Process ID: 157542
+# Current directory: /home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.runs/impl_2
+# Command line: vivado -log top_file.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_file.tcl -notrace
+# Log file: /home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.runs/impl_2/top_file.vdi
+# Journal file: /home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.runs/impl_2/vivado.jou
+# Running On        :localhost.localdomain
+# Platform          :unknown
+# Operating System  :unknown
+# Processor Detail  :AMD Ryzen 5 5600 6-Core Processor
+# CPU Frequency     :3500.000 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :33352 MB
+# Swap memory       :8443 MB
+# Total Virtual     :41796 MB
+# Available Virtual :35108 MB
+#-----------------------------------------------------------
+source top_file.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/blaine/Vivado_2024.1/Vivado/2024.1/data/ip'.
+Command: link_design -top top_file -part xc7a200tfbg676-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Device 21-9227] Part: xc7a200tfbg676-2 does not have CEAM library.
+Netlist sorting complete. Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2176.309 ; gain = 0.000 ; free physical = 20458 ; free virtual = 32544
+INFO: [Netlist 29-17] Analyzing 1367 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-1115] Found multi-term driver net: design_1_i/util_ds_buf_0/U0/<const0>.
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/design_1_xdma_0_0_axi_stream_intf_i/design_1_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0'
+Finished Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/design_1_xdma_0_0_axi_stream_intf_i/design_1_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0'
+Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_3/pcie2_fifo_generator_dma_cpl.xdc] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/design_1_xdma_0_0_axi_stream_intf_i/design_1_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0'
+Finished Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_3/pcie2_fifo_generator_dma_cpl.xdc] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/design_1_xdma_0_0_axi_stream_intf_i/design_1_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0'
+Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc:139]
+INFO: [Timing 38-2] Deriving generated clocks [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc:139]
+Finished Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/U0'
+Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0_board.xdc] for cell 'design_1_i/xdma_0/inst'
+Finished Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0_board.xdc] for cell 'design_1_i/xdma_0/inst'
+Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/source/design_1_xdma_0_0_pcie3_7vx_ip.xdc] for cell 'design_1_i/xdma_0/inst'
+Finished Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/source/design_1_xdma_0_0_pcie3_7vx_ip.xdc] for cell 'design_1_i/xdma_0/inst'
+Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc] for cell 'design_1_i/axi_iic_0/U0'
+Finished Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc] for cell 'design_1_i/axi_iic_0/U0'
+Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:54]
+Finished Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc] for cell 'design_1_i/util_ds_buf_0/U0'
+Finished Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc] for cell 'design_1_i/util_ds_buf_0/U0'
+Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.srcs/constrs_1/imports/ac701-xdc-rdf021/AC701_Rev1_0_ucf.xdc]
+Finished Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.srcs/constrs_1/imports/ac701-xdc-rdf021/AC701_Rev1_0_ucf.xdc]
+Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/ip_xilinx_pcie_2_1_7x_late.xdc] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/ip_xilinx_pcie_2_1_7x_late.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/ip_xilinx_pcie_2_1_7x_late.xdc:84]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/ip_xilinx_pcie_2_1_7x_late.xdc:87]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/ip_xilinx_pcie_2_1_7x_late.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/ip_xilinx_pcie_2_1_7x_late.xdc:89]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/ip_xilinx_pcie_2_1_7x_late.xdc:90]
+Finished Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/ip_xilinx_pcie_2_1_7x_late.xdc] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/U0'
+Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc] for cell 'design_1_i/axi_interconnect_0/m00_couplers/auto_ds/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:30]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:54]
+Finished Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc] for cell 'design_1_i/axi_interconnect_0/m00_couplers/auto_ds/inst'
+Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc] for cell 'design_1_i/axi_interconnect_0/m01_couplers/auto_ds/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:30]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:54]
+Finished Parsing XDC File [/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc] for cell 'design_1_i/axi_interconnect_0/m01_couplers/auto_ds/inst'
+INFO: [Project 1-1714] 15 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 42 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3043.797 ; gain = 0.000 ; free physical = 19724 ; free virtual = 31810
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 521 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 18 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 470 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 22 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 9 instances
+
+16 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 3043.797 ; gain = 1324.066 ; free physical = 19724 ; free virtual = 31810
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.47 . Memory (MB): peak = 3107.828 ; gain = 64.031 ; free physical = 19717 ; free virtual = 31802
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 217de23db
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.55 . Memory (MB): peak = 3107.828 ; gain = 0.000 ; free physical = 19712 ; free virtual = 31798
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 217de23db
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19445 ; free virtual = 31531
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 217de23db
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19445 ; free virtual = 31531
+Phase 1 Initialization | Checksum: 217de23db
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19445 ; free virtual = 31531
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 217de23db
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.33 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19443 ; free virtual = 31528
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 217de23db
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.37 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19437 ; free virtual = 31522
+Phase 2 Timer Update And Timing Data Collection | Checksum: 217de23db
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.38 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19437 ; free virtual = 31522
+
+Phase 3 Retarget
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 20 inverters resulting in an inversion of 148 pins
+INFO: [Opt 31-138] Pushed 7 inverter(s) to 72 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 284cdd66e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19436 ; free virtual = 31522
+Retarget | Checksum: 284cdd66e
+INFO: [Opt 31-389] Phase Retarget created 28 cells and removed 1169 cells
+INFO: [Opt 31-1021] In phase Retarget, 75 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 40 inverter(s) to 96 load pin(s).
+Phase 4 Constant propagation | Checksum: 203f8c439
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19436 ; free virtual = 31522
+Constant propagation | Checksum: 203f8c439
+INFO: [Opt 31-389] Phase Constant propagation created 1060 cells and removed 1865 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 60 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 231d6434e
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19436 ; free virtual = 31522
+Sweep | Checksum: 231d6434e
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2737 cells
+INFO: [Opt 31-1021] In phase Sweep, 269 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-274] Optimized connectivity to 1 cascaded buffer cells
+Phase 6 BUFG optimization | Checksum: 1eb2d7100
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19436 ; free virtual = 31522
+BUFG optimization | Checksum: 1eb2d7100
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 1 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1eb2d7100
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19436 ; free virtual = 31522
+Shift Register Optimization | Checksum: 1eb2d7100
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 3 pins
+Phase 8 Post Processing Netlist | Checksum: 1a00a4efb
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19436 ; free virtual = 31522
+Post Processing Netlist | Checksum: 1a00a4efb
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 84 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 15dcf69fc
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19436 ; free virtual = 31522
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19436 ; free virtual = 31522
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 15dcf69fc
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19436 ; free virtual = 31522
+Phase 9 Finalization | Checksum: 15dcf69fc
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19436 ; free virtual = 31522
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              28  |            1169  |                                             75  |
+|  Constant propagation         |            1060  |            1865  |                                             60  |
+|  Sweep                        |               0  |            2737  |                                            269  |
+|  BUFG optimization            |               0  |               1  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                             84  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 15dcf69fc
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3347.711 ; gain = 0.000 ; free physical = 19436 ; free virtual = 31522
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 31 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 9 newly gated: 28 Total Ports: 62
+Number of Flops added for Enable Generation: 6
+
+Ending PowerOpt Patch Enables Task | Checksum: 251796758
+
+Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.19 . Memory (MB): peak = 3805.102 ; gain = 0.000 ; free physical = 19126 ; free virtual = 31212
+Ending Power Optimization Task | Checksum: 251796758
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 3805.102 ; gain = 457.391 ; free physical = 19126 ; free virtual = 31212
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 248cb4c8f
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3805.102 ; gain = 0.000 ; free physical = 19122 ; free virtual = 31208
+Ending Final Cleanup Task | Checksum: 248cb4c8f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3805.102 ; gain = 0.000 ; free physical = 19122 ; free virtual = 31208
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3805.102 ; gain = 0.000 ; free physical = 19122 ; free virtual = 31208
+Ending Netlist Obfuscation Task | Checksum: 248cb4c8f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3805.102 ; gain = 0.000 ; free physical = 19122 ; free virtual = 31208
+INFO: [Common 17-83] Releasing license: Implementation
+47 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 3805.102 ; gain = 761.305 ; free physical = 19122 ; free virtual = 31208
+INFO: [Vivado 12-24828] Executing command : report_drc -file top_file_drc_opted.rpt -pb top_file_drc_opted.pb -rpx top_file_drc_opted.rpx
+Command: report_drc -file top_file_drc_opted.rpt -pb top_file_drc_opted.pb -rpx top_file_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.runs/impl_2/top_file_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3805.102 ; gain = 0.000 ; free physical = 19119 ; free virtual = 31206
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3805.102 ; gain = 0.000 ; free physical = 19119 ; free virtual = 31206
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3805.102 ; gain = 0.000 ; free physical = 19117 ; free virtual = 31206
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3805.102 ; gain = 0.000 ; free physical = 19115 ; free virtual = 31206
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3805.102 ; gain = 0.000 ; free physical = 19115 ; free virtual = 31206
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3805.102 ; gain = 0.000 ; free physical = 19114 ; free virtual = 31206
+Write Physdb Complete: Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3805.102 ; gain = 0.000 ; free physical = 19114 ; free virtual = 31206
+INFO: [Common 17-1381] The checkpoint '/home/blaine/Documents/Github/AC701_I2C_PCIe_example/PCIe_Artix_7_eval/project_1/project_1.runs/impl_2/top_file_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+ERROR: [DRC REQP-49] connects_GTGREFCLK0_ACTIVE_connects_GTGREFCLK1_ACTIVE: GTPE2_COMMON cell design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_wrapper_i/gtp_common.gtpe2_common_i: Use of the GTGREFCLK is reserved for test purposes only. This has the lowest performance of the available clocking methods and can degrade transceiver performance.
+INFO: [Vivado_Tcl 4-198] DRC finished with 1 Errors, 4 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
+62 Infos, 39 Warnings, 0 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Sat Mar  1 12:46:19 2025...

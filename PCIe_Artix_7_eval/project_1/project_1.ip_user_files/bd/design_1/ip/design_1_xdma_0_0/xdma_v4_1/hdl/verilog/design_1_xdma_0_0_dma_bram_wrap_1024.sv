@@ -60,7 +60,7 @@
 `include "dma_defines.vh"
 `include "dma_defines.svh"
 
-module xdma_v4_1_30_dma_bram_wrap_1024
+module xdma_v4_1_29_dma_bram_wrap_1024
 #(
   parameter DATA_WIDTH = 256,
   parameter AXI4MM_ULTRA = 0,
@@ -91,7 +91,7 @@ generate
 	begin
 		if (OUTPUT_REG == 0) 
 				if (ECC_ENABLE == 0)
-	      			xdma_v4_1_30_blk_mem_64_noreg_be_1024 u_buffermem(
+	      			xdma_v4_1_29_blk_mem_64_noreg_be_1024 u_buffermem(
 					     .clka(clkin),
 					     .wea(wrEn[memcnt*64/8+:8]),
 					     .ena(1'b1),
@@ -117,7 +117,7 @@ generate
 					     	    ParityOut[(memcnt*8)+0],DataOut[(memcnt*64+0)+:8]})
 					     );
 				else 
-	      			xdma_v4_1_30_blk_mem_64_noreg_ecc u_buffermem(
+	      			xdma_v4_1_29_blk_mem_64_noreg_ecc u_buffermem(
 					.clka(clkin),
 					.wea(wrEn[0]),
 					.ena(1'b1),
@@ -131,7 +131,7 @@ generate
 				);
 	    	else
 				if (ECC_ENABLE == 0)
-	      			xdma_v4_1_30_blk_mem_64_reg_be u_buffermem(
+	      			xdma_v4_1_29_blk_mem_64_reg_be u_buffermem(
 					     .clka(clkin),
 					     .ena(1'b1),
 					     .wea(wrEn[memcnt*64/8+:8]),
@@ -157,7 +157,7 @@ generate
 					     	    ParityOut[(memcnt*8)+0],DataOut[(memcnt*64+0)+:8]})
 					     );
 				else 
-	      			xdma_v4_1_30_blk_mem_64_reg_ecc u_buffermem(
+	      			xdma_v4_1_29_blk_mem_64_reg_ecc u_buffermem(
 					.clka(clkin),
 					.wea(wrEn[0]),
 					.ena(1'b1),

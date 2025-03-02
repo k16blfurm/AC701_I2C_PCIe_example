@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2024.1.1 (win64) Build 5094488 Fri Jun 14 08:59:21 MDT 2024
-| Date         : Tue Feb 25 22:47:03 2025
-| Host         : DESKTOP-KBUD60Q running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Thu Feb 27 00:04:30 2025
+| Host         : localhost.localdomain running 64-bit unknown
 | Command      : report_utilization -file top_file_utilization_synth.rpt -pb top_file_utilization_synth.pb
 | Design       : top_file
 | Device       : xc7a200tfbg676-2
@@ -97,7 +97,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |    9 |     0 |          0 |       400 |  2.25 |
+| Bonded IOB                  |   11 |     0 |          0 |       400 |  2.75 |
 | Bonded IPADs                |    8 |     0 |          0 |        26 | 30.77 |
 | Bonded OPADs                |    8 |     0 |          0 |        16 | 50.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |        10 |  0.00 |
@@ -105,7 +105,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | OUT_FIFO                    |    0 |     0 |          0 |        40 |  0.00 |
 | IN_FIFO                     |    0 |     0 |          0 |        40 |  0.00 |
 | IDELAYCTRL                  |    0 |     0 |          0 |        10 |  0.00 |
-| IBUFDS                      |    1 |     0 |          0 |       384 |  0.26 |
+| IBUFDS                      |    2 |     0 |          0 |       384 |  0.52 |
 | GTPE2_CHANNEL               |    4 |     0 |          0 |         8 | 50.00 |
 | PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |          0 |        40 |  0.00 |
 | PHASER_IN/PHASER_IN_PHY     |    0 |     0 |          0 |        40 |  0.00 |
@@ -122,10 +122,10 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCTRL   |    6 |     0 |          0 |        32 | 18.75 |
+| BUFGCTRL   |    9 |     0 |          0 |        32 | 28.13 |
 | BUFIO      |    0 |     0 |          0 |        40 |  0.00 |
 | MMCME2_ADV |    1 |     0 |          0 |        10 | 10.00 |
-| PLLE2_ADV  |    0 |     0 |          0 |        10 |  0.00 |
+| PLLE2_ADV  |    1 |     0 |          0 |        10 | 10.00 |
 | BUFMRCE    |    0 |     0 |          0 |        20 |  0.00 |
 | BUFHCE     |    0 |     0 |          0 |       120 |  0.00 |
 | BUFR       |    0 |     0 |          0 |        40 |  0.00 |
@@ -163,7 +163,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | LUT4          |  3112 |                  LUT |
 | RAMD32        |  2900 |   Distributed Memory |
 | LUT2          |  2150 |                  LUT |
-| LUT1          |  1546 |                  LUT |
+| LUT1          |  1547 |                  LUT |
 | RAMS32        |   940 |   Distributed Memory |
 | CARRY4        |   578 |           CarryLogic |
 | FDSE          |   306 |         Flop & Latch |
@@ -174,16 +174,17 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | RAMB36E1      |    30 |         Block Memory |
 | SRLC32E       |    26 |   Distributed Memory |
 | MUXF8         |    19 |                MuxFx |
-| OBUF          |    12 |                   IO |
+| OBUF          |    11 |                   IO |
 | IBUF          |    11 |                   IO |
 | RAMS64E       |     9 |   Distributed Memory |
-| BUFG          |     5 |                Clock |
+| BUFG          |     8 |                Clock |
 | GTPE2_CHANNEL |     4 |                   IO |
-| OBUFT         |     2 |                   IO |
+| OBUFT         |     3 |                   IO |
+| IBUFDS        |     2 |                   IO |
 | RAMB18E1      |     1 |         Block Memory |
+| PLLE2_ADV     |     1 |                Clock |
 | PCIE_2_1      |     1 | Specialized Resource |
 | MMCME2_ADV    |     1 |                Clock |
-| IBUFDS        |     1 |                   IO |
 | GTPE2_COMMON  |     1 |                   IO |
 | BUFGCTRL      |     1 |                Clock |
 +---------------+-------+----------------------+

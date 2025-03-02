@@ -179,7 +179,7 @@
         "OUTPUTDIR": [ { "value": "../../../../../../project_1.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2024.1.1" } ],
+        "SWVERSION": [ { "value": "2024.1" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },

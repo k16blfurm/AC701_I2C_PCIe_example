@@ -94,7 +94,7 @@ entity design_1_xdma_0_0_pcie2_ip_core_top is
     BAR4                                           : bit_vector := X"00000000";
     BAR5                                           : bit_vector := X"00000000";
 
-    C_DATA_WIDTH                                   : integer    := 128;
+    C_DATA_WIDTH                                   : integer    := 64;
     CARDBUS_CIS_POINTER                            : bit_vector := X"00000000";
     CLASS_CODE                                     : bit_vector := X"070001";
     CMD_INTX_IMPLEMENTED                           : string     := "TRUE";
@@ -226,7 +226,7 @@ entity design_1_xdma_0_0_pcie2_ip_core_top is
     TL_RX_RAM_RDATA_LATENCY                        : integer    := 2;
     TL_TX_RAM_RDATA_LATENCY                        : integer    := 2;
     TRN_NP_FC                                      : string     := "TRUE";
-    TRN_DW                                         : string     := "TRUE";
+    TRN_DW                                         : string     := "FALSE";
 
     UPCONFIG_CAPABLE                               : string     := "TRUE";
     UPSTREAM_FACING                                : string     := "TRUE";
@@ -234,7 +234,7 @@ entity design_1_xdma_0_0_pcie2_ip_core_top is
     UR_INV_REQ                                     : string     := "TRUE";
     UR_PRS_RESPONSE                                : string     := "TRUE";
     USER_CLK_FREQ                                  : integer    := 3;
-    USER_CLK2_DIV2                                 : string     := "TRUE";
+    USER_CLK2_DIV2                                 : string     := "FALSE";
 
     VC_BASE_PTR                                    : bit_vector := X"000";
     VC_CAP_NEXTPTR                                 : bit_vector := X"000";

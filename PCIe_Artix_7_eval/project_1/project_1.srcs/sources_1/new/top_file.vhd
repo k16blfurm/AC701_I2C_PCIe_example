@@ -49,8 +49,11 @@ entity top_file is
   port (
     IIC_SCL_MAIN : inout STD_LOGIC;
     IIC_SDA_MAIN : inout STD_LOGIC;
-    sys_clk_p : in STD_LOGIC;
-    sys_clk_n : in STD_LOGIC; 
+    refclk_p : in STD_LOGIC;
+    refclk_n : in STD_LOGIC; 
+--    sys_diff_clock_clk_p : in STD_LOGIC;
+--    sys_diff_clock_clk_n : in STD_LOGIC;
+        FPGA_EMCCLK : in STD_LOGIC;
 --    refclk_ibuf: in STD_LOGIC;
     pcie_7x_mgt_rtl_rxn : in STD_LOGIC_VECTOR ( 3 downto 0 ); 
     pcie_7x_mgt_rtl_rxp : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -67,7 +70,7 @@ end top_file;
 architecture STRUCTURE of top_file is
   component design_1 is
   port (
-    pcie_7x_mgt_rtl_rxn : in STD_LOGIC_VECTOR ( 3 downto 0 );
+   pcie_7x_mgt_rtl_rxn : in STD_LOGIC_VECTOR ( 3 downto 0 );
     pcie_7x_mgt_rtl_rxp : in STD_LOGIC_VECTOR ( 3 downto 0 );
     pcie_7x_mgt_rtl_txn : out STD_LOGIC_VECTOR ( 3 downto 0 );
     pcie_7x_mgt_rtl_txp : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -78,9 +81,12 @@ architecture STRUCTURE of top_file is
     IIC_0_sda_o : out STD_LOGIC;
     IIC_0_sda_t : out STD_LOGIC;
     sys_rst_n : in STD_LOGIC;
-    CLK_IN1_D_0_clk_p : in STD_LOGIC;
-    CLK_IN1_D_0_clk_n : in STD_LOGIC;
-    CLK_125_AXI : out STD_LOGIC
+    CLK_125_AXI : out STD_LOGIC;
+    --FPGA_EMCCLK : in STD_LOGIC;
+    CLK_IN_D_0_clk_n : in STD_LOGIC;
+    CLK_IN_D_0_clk_p : in STD_LOGIC
+    --clk_out2_0 : out STD_LOGIC;
+    --clk_out3_0 : out STD_LOGIC
   );
   end component design_1;
   
@@ -114,6 +120,9 @@ architecture STRUCTURE of top_file is
   signal GPIO_LED_1_buf : std_logic;
   signal GPIO_LED_2_buf : std_logic;
   signal GPIO_LED_3_buf : std_logic;
+  signal CLK_10M_sysclk : std_logic;
+  signal CLK_100M_sysclk : std_logic;
+  
 begin
 IIC_0_scl_iobuf: component IOBUF
      port map (
@@ -147,21 +156,55 @@ IIC_0_sda_iobuf: component IOBUF
             counter <= (others => '0');
             counter_reset <= '0';
             GPIO_LED_0_buf <= '0';
-            GPIO_LED_1_buf <= '0';
-            GPIO_LED_2_buf <= '0';
-            GPIO_LED_3_buf <= '0';
         elsif(counter > x"07735940") then
             counter_reset <= '1';
             counter <= (others => '0');
             GPIO_LED_0_buf <= not (GPIO_LED_0_buf);
-            GPIO_LED_1_buf <= not (GPIO_LED_1_buf);
-            GPIO_LED_2_buf <= not (GPIO_LED_2_buf);
-            GPIO_LED_3_buf <= not (GPIO_LED_3_buf);
         else
             counter <= counter + 1;    
     end if;
     end if;
  end process;
+
+ -- Counter to see if AXI clock is working   
+ -- Count up to 125 000 000 dec or 773 5940 hex
+ process(CLK_10M_sysclk, sys_rst_n) is
+ begin
+    if rising_edge(CLK_10M_sysclk) then 
+        if(sys_rst_n = '0' or counter_reset <= '1') then
+            counter <= (others => '0');
+            counter_reset <= '0';
+            GPIO_LED_1_buf <= '0';
+        elsif(counter > x"00989680") then
+            counter_reset <= '1';
+            counter <= (others => '0');
+            GPIO_LED_1_buf <= not (GPIO_LED_1_buf);
+        else
+            counter <= counter + 1;    
+    end if;
+    end if;
+ end process;
+ 
+ 
+  -- Counter to see if AXI clock is working   
+ -- Count up to 125 000 000 dec or 773 5940 hex
+ process(CLK_100M_sysclk, sys_rst_n) is
+ begin
+    if rising_edge(CLK_100M_sysclk) then 
+        if(sys_rst_n = '0' or counter_reset <= '1') then
+            counter <= (others => '0');
+            counter_reset <= '0';
+            GPIO_LED_2_buf <= '0';
+        elsif(counter > x"05F5E100") then
+            counter_reset <= '1';
+            counter <= (others => '0');
+            GPIO_LED_2_buf <= not (GPIO_LED_2_buf);
+        else
+            counter <= counter + 1;    
+    end if;
+    end if;
+ end process;
+
        
     GPIO_LED_0 <= GPIO_LED_0_buf;
     GPIO_LED_1 <= GPIO_LED_1_buf;
@@ -177,12 +220,17 @@ design_1_i: component design_1
       IIC_0_sda_i => IIC_0_sda_i,
       IIC_0_sda_o => IIC_0_sda_o,
       IIC_0_sda_t => IIC_0_sda_t,
-      CLK_IN1_D_0_clk_p => sys_clk_p,
-      CLK_IN1_D_0_clk_n => sys_clk_n,
+      CLK_IN_D_0_clk_p => refclk_p,
+      CLK_IN_D_0_clk_n => refclk_n,
       pcie_7x_mgt_rtl_rxn(3 downto 0) => pcie_7x_mgt_rtl_rxn(3 downto 0),
       pcie_7x_mgt_rtl_rxp(3 downto 0) => pcie_7x_mgt_rtl_rxp(3 downto 0),
       pcie_7x_mgt_rtl_txn(3 downto 0) => pcie_7x_mgt_rtl_txn(3 downto 0),
       pcie_7x_mgt_rtl_txp(3 downto 0) => pcie_7x_mgt_rtl_txp(3 downto 0),
       sys_rst_n => sys_rst_n
+           -- FPGA_EMCCLK => FPGA_EMCCLK
+--      sys_diff_clock_clk_n => sys_diff_clock_clk_n,
+--      sys_diff_clock_clk_p => sys_diff_clock_clk_p
+      --clk_out3_0 => CLK_10M_sysclk,
+      --clk_out2_0 => CLK_100M_sysclk
     );
 end STRUCTURE;
