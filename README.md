@@ -16,3 +16,9 @@ Lessons Learned:
 
 2/25/25 Ver 1:
 - Added Bram and Memory Generator
+
+3/2/2025:
+- PCIe bus works. Addresses are shown below.
+
+![image](https://github.com/user-attachments/assets/deb2e0a6-172f-45cf-8507-32176a452612)
+
